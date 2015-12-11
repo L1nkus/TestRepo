@@ -1,3 +1,19 @@
+'''
+Input Description:
+    You'll be given a line with a single integer on it, telling you how many lines to read.
+    Then you'll be given that many lines, each line a list of letters representing the keys that work on my keyboard.
+    Example:
+        3
+        abc
+        qwer
+        hjklo
+Output Description:
+    Your program should emit the longest valid English language word you can make for each keyboard configuration.
+    abcd = bacaba
+    qwer = ewerer
+    hjklo = kolokolo
+'''
+
 def check_chars(word, chars):
     for i in range(len(word)):
         if word[i] not in chars:
