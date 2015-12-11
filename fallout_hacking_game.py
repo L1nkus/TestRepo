@@ -1,3 +1,5 @@
+#https://redd.it/3qjnil
+
 from random import randint, sample
 fp=open("enable1.txt", "r")
 lines=[]
