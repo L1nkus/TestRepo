@@ -9,9 +9,10 @@ Input Description:
         hjklo
 Output Description:
     Your program should emit the longest valid English language word you can make for each keyboard configuration.
-    abcd = bacaba
-    qwer = ewerer
-    hjklo = kolokolo
+    Example:
+        abcd = bacaba
+        qwer = ewerer
+        hjklo = kolokolo
 '''
 
 def check_chars(word, chars):
