@@ -6,10 +6,8 @@ def check_chars(word, chars):
 
 f=open("enable1.txt", "r")
 strokes=[]; words=[]; goodwords=[]; final=[]
-for i in range(int(input())):
-    strokes.append(input())
-for line in f:
-    words.append(line)
+[strokes.append(input().lower()) for i in range(int(input()))]
+[words.append(line) for line in f]
 for x in range(len(strokes)):
     best=0
     for i in range(len(words)):
@@ -23,5 +21,4 @@ for x in range(len(strokes)):
     except IndexError:
         final.append("NONE")
     goodwords.clear()
-for i in range(len(strokes)):
-    print(strokes[i]+" = "+final[i])
+[print (strokes[i]+" = "+final[i]) for i in range(len(strokes))]
