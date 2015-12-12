@@ -13,7 +13,7 @@ for i in range(len(lines)):
     if len(lines[i])==int(l):
         linesv2.append(lines[i])
 linesv2 = sample(linesv2, 4*int(input("Difficulty (1-5)? ")))
-for i in range(len(linesv2)):print(linesv2[i], end='')
+[print(i, end='') for i in linesv2]
 linesv2=''.join(sample(linesv2, 1)).rstrip()
 while True:
     word = input("Guess (%i left)? " % guesses)

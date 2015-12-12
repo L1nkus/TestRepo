@@ -16,8 +16,8 @@ Output Description:
 '''
 
 def check_chars(word, chars):
-    for i in range(len(word)):
-        if word[i] not in chars:
+    for i in word:
+        if i not in chars:
             return False
     return True
 
