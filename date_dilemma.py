@@ -1,3 +1,5 @@
+#A script to parse YMD and MDY dates into an ISO 8601 (YYYY-MM-DD) formatted date.
+
 import sys
 from string import ascii_letters
 
